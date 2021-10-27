@@ -92,7 +92,8 @@
   }
   .follow{
     background: black;
-    margin-left: 655px;
+    margin-left: auto;
+    margin-right:auto;
     color:white;
     width: 160px;
     padding: 10px;
