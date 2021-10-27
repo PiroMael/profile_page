@@ -64,6 +64,9 @@
     z-index:1;
   }
   
+    /*------------------------*/
+/*---lune--*/
+/*---------------------------*/
   #Mael{
     z-index: -12;
     position: absolute;
@@ -74,6 +77,58 @@
     top:-10px;
     box-shadow: inset 10px 5px 5px #fff;
   }
+
+
+  .ball {
+  	border-radius:100%;
+  }
+
+
+  .shine3{
+    position: absolute;
+  	height: 200px;
+  	width: 200px;
+  	background: #fff;
+    left: -29px;
+    top: -25px;
+  	opacity: 0.05;
+    animation: glow 3s infinite ease-in-out;
+  }
+  .shine4{
+    position: absolute;
+  	height: 240px;
+  	width: 240px;
+  	background: #fff;
+    left: -49px;
+    top: -40px;
+  	opacity: 0.05;
+    animation: glow 3s infinite ease-in-out;
+  }
+    .shine5{
+    position: absolute;
+  	height: 300px;
+  	width: 300px;
+  	background: #fff;
+    left: -74px;
+    top: -66px;
+  	opacity: 0.05;
+    animation: glow 3s infinite ease-in-out;
+  }
+  @keyframes glow{
+    0%{
+      transform:scale(1.2);
+    }
+    50%{
+      transform:scale(0.8);
+    }
+    100%{
+      transform:scale(1.2);
+    }
+  }
+
+  /*------------------------*/
+/*---lune Fin--*/
+/*---------------------------*/
   h1, h2{
       font-family: 'Permanent Marker', cursive;
   }
@@ -89,9 +144,11 @@
     margin-right: auto;
     margin-top: 20px;
     padding: 15px;
+    border-radius: 5px;
   }
   .follow{
     background: black;
+    border-radius: 5px;  
     margin-left: auto;
     margin-right:auto;
     color:white;
