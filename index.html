@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section>
+      <div id="Mael"></div>
+      <img src="Mountain1.png" id="Mountain1">
+      <img src="Mountain2.png" id="Mountain2">
+      <img src="Mountain3.png" id="Mountain3" style="z-index: 2;">
+      <img src="Mountain4.png" id="Mountain4"  style="z-index: 3;"> >
+      <<h2 id="text" style="z-index: 0;">Mael Piro</h2>
+    </section>
+
+<div id="main" class="color">
+
+  <br>
+  <br><br>
+  <br><br>
+  <br>
+  <br>
+  <div class="follow">
+    <h2> Follow mE</h2>
+  <a href ="https://www.facebook.com/mael.orip"> <i class="fab fa-facebook"></i> </a>
+  <a href ="">  <i class="fab fa-twitter"></i> </a>
+  <a href ="https://www.linkedin.com/in/ma%C3%ABl-piro-406960209/">  <i class="fab fa-linkedin"></i> </a>
+  </div>
+  <div class="text-contener big">
+     <p>I love web-devlopement and exploring new things about front dev</p>
+     <p>I want to get new front skills , like use 3D in my websites</p>
+
+     <p>I'm also learning cool stuff at LeWagon Lyon!</p>
+
+ </div>
+
+  <div class="text-contener big">
+ <h2>📜 Manifesto</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+  </div>
+  <div class="text-contener big">
+  <h2>👩🏽‍🚀 Projects</h2>
+
+       <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       </p>
+   </div>
+  <div class="text-contener big">
+         <h2>🏆 Accomplishments</h2>
+
+         <p>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+         </p>
+  </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+  let Mael = document.getElementById("Mael");
+  let Mountain1 = document.getElementById("Mountain1");
+  let Mountain2 = document.getElementById("Mountain2");
+  let Mountain3 = document.getElementById("Mountain3");
+  let Mountain4 = document.getElementById("Mountain4");
+  let text = document.getElementById("text");
+  let content = document.getElementById('main');
+
+  window.addEventListener('scroll', function(){
+    console.log(window.scrollY)
+    var value = window.scrollY;
+    if (window.scrollY < 610){
+        Mountain1.style.top = -value * 0.02 + 'px';
+        Mountain2.style.top = -value * 0.04 + 'px';
+        Mountain3.style.top = -value * 0.05 + 'px';
+
+        Mael.style.top = value * 2 + 'px';
+        text.style.top = value * 0.4 + 'px';
+        content.style.top = -value * 10 +'px';
+    }
+    
+  })
+</script>
+  </body>
+</html>
