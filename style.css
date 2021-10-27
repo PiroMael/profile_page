@@ -125,7 +125,8 @@
       transform:scale(1.2);
     }
   }
-  .star1{
+
+.star1{
   position: absolute;
   background: center / contain no-repeat url("./star.png");
   left:560px;
