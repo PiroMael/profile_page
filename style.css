@@ -17,7 +17,7 @@
 
   }
   .color{
-    background: #6e4200;
+    background: #43543e;
     z-index: 1;
   }
   section{
@@ -35,7 +35,7 @@
     bottom:0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #6e4200,transparent);
+    background: linear-gradient(to top, #43543e,transparent);
     z-index: 10000;
   }
   section:after{
@@ -44,7 +44,8 @@
     bottom:0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(255,153,0,1) 0%, rgba(250,152,10,1) 7%, rgba(189,144,125,1) 40%, rgba(159,140,182,1) 100%);
+    background: rgb(67,84,62);
+    background: linear-gradient(0deg, rgba(67,84,62,1) 1%, rgba(230,177,156,1) 51%, rgba(159,140,182,1) 100%);
     z-index: 10000;
     mix-blend-mode: color;
   }
@@ -199,6 +200,6 @@
       position: absolute;
       width: 100%;
       height: 800px;
-      background: rgb(255,153,0);
-      background: linear-gradient(0deg, rgba(255,153,0,1) 0%, rgba(250,152,10,1) 7%, rgba(189,144,125,1) 40%, rgba(159,140,182,1) 100%);
+      background: rgb(67,84,62);
+      background: linear-gradient(0deg, rgba(67,84,62,1) 1%, rgba(230,177,156,1) 51%, rgba(159,140,182,1) 100%);
   }
